@@ -1,0 +1,8 @@
+---
+name: VMD (Visual Molecular Dynamics)
+category: Interactive Apps
+role: batch_connect
+description: |
+  This will launch an Interactive VMD desktop session.
+
+  
