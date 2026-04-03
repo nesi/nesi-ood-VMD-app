@@ -74,6 +74,8 @@ xfconf-query -c xfwm4 -p /general/use_compositing -t bool -s true
 #xfsettingsd --sm-client-disable &
 ##xfce4-panel --sm-client-disable &
 
+module load ${vmd_module}
+
 # If this launches, it will automatically force Avogadro to be a permanent, borderless fullscreen app
 #xfce4-terminal -e "vmd" -T "VMD Terminal" --disable-server
 vglrun vmd
