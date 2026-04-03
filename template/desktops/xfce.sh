@@ -62,7 +62,7 @@ killall compton picom xcompmgr compiz 2>/dev/null || true
 xfconf-query -c xfwm4 -p /general/use_compositing -t bool -s true
 
 # Start up xfce desktop (block until user logs out of desktop)
-xfce4-session
+#xfce4-session
 
 ########################################################################
 
