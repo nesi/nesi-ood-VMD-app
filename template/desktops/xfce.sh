@@ -32,7 +32,7 @@ done
 echo -e "[Desktop Entry]
 Type=Application
 Name=VMD
-Exec=xfce4-terminal --hold -e \"bash -l -c 'module load ${vmd_module}; vlgrun vmd'\"
+Exec=xfce4-terminal --hold -e \"bash -l -c 'module load ${vmd_module}; vmd'\"
 Terminal=false
 StartupNotify=false
 " > "${AUTOSTART}/VMD.desktop"
