@@ -62,18 +62,4 @@ killall compton picom xcompmgr compiz 2>/dev/null || true
 xfconf-query -c xfwm4 -p /general/use_compositing -t bool -s true
 
 # Start up xfce desktop (block until user logs out of desktop)
-#xfce4-session
-
-########################################################################
-
-# This method currently doesnt work for VMD on Mahuika OnDemand
-
-# START THE WINDOW MANAGER COMPONENTS IN THE BACKGROUND
-xfwm4 --compositor=off --sm-client-disable &
-xsetroot -solid "#D3D3D3" &
-xfsettingsd --sm-client-disable &
-#xfce4-panel --sm-client-disable &
-
-# If this launches, it will automatically force Avogadro to be a permanent, borderless fullscreen app
-xfce4-terminal -e "module load ${vmd_module}; vlgrun vmd" -T "VMD Terminal" --disable-server
-
+xfce4-session
