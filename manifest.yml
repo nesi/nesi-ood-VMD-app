@@ -1,6 +1,6 @@
 ---
 name: VMD (Visual Molecular Dynamics)
-category: Chemistry/Biochemistry
+category: Chemistry
 role: batch_connect
 description: |
   This will launch an Interactive VMD session.
