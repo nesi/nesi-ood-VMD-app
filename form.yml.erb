@@ -31,12 +31,6 @@ attributes:
 
   bc_vnc_resolution:
     required: true
-  vmd_module:
-    widget: select
-    label: "VMD module"
-    options:
-      - [ "VMD 1.9.3", "VMD/1.9.3-gimkl-2020a" ]
-    cacheable: false  # default to latest (first in list)
   account:
     label: "Project Code"
     widget: select
@@ -46,6 +40,12 @@ attributes:
       <%- end %>
     required: true
     display: true
+  vmd_module:
+    widget: select
+    label: "VMD module"
+    options:
+      - [ "VMD 1.9.3", "VMD/1.9.3-gimkl-2020a" ]
+    cacheable: false  # default to latest (first in list)
   bc_num_hours:
     max: 24
     min: 1
